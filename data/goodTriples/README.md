@@ -1,0 +1,3 @@
+Three columns, space separated.  First column is CNOT depolarisation rate, second column is Toffoli rate/CNOT rate, third column is preparation error rate.
+
+`goodTriples` returns the triples for which the circuit in question has lower error rate on the output than on the input.  The files here have been trimmed using `trim.hs`, which views the triples as a cloud of points and only retains those points on the boundary of the cloud.  The untrimmed files are large, multiple GB in size.

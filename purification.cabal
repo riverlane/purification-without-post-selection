@@ -1,0 +1,55 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           purification
+version:        1.0
+description:    Please see the README on GitHub at <https://github.com/riverlane/post-selection-free-purification>
+homepage:       https://github.com/riverlane/post-selection-free-purification#readme
+bug-reports:    https://github.com/riverlane/post-selection-free-purification/issues
+copyright:      2022 Riverlane Ltd
+license:        LicenseRef-MIT-plus-Commons-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/riverlane/post-selection-free-purification
+
+library
+  exposed-modules:
+      Binomial
+      Circuits
+      Examples
+      Pathfinding
+      Search
+      Simulate
+  other-modules:
+      Paths_purification
+  hs-source-dirs:
+      src
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , multiset
+  default-language: Haskell2010
+
+executable purification-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_purification
+  hs-source-dirs:
+      app
+  ghc-options: -O2 -rtsopts
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , multiset
+    , purification
+  default-language: Haskell2010

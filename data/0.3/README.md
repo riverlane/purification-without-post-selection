@@ -1,0 +1,1 @@
+Two columns per line, space separated.  First column is preparation error, second column is output error.  Idle errors 0.1%, CNOT and Toffoli errors 0.3%.

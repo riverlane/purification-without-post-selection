@@ -1,0 +1,5 @@
+.stack-work/
+*.tex
+*.eps
+*.o
+*.hi

@@ -1,0 +1,1 @@
+Two columns per line, space separated.  First column is preparation error, second column is output error.  Idle and gate error rates are set to zero.
